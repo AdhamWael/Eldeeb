@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adham Eldeeb - Portfolio">
+    <meta name="keywords" content="Adham Eldeeb, Portfolio, Web Developer">
+    <meta name="author" content="Adham Eldeeb">
+    <meta name="language" content="English">
+    <title>Adham Eldeeb - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Page loader: shows an animated "Adham Eldeeb" until content is ready -->
+    <div id="page-loader" class="page-loader" aria-hidden="false">
+        <div class="loader-inner">
+            <div class="loader-text" aria-hidden="true">
+                <span class="loader-letter">A</span>
+                <span class="loader-letter">d</span>
+                <span class="loader-letter">h</span>
+                <span class="loader-letter">a</span>
+                <span class="loader-letter">m</span>
+                <span class="loader-space">&nbsp;</span>
+                <span class="loader-letter">E</span>
+                <span class="loader-letter">l</span>
+                <span class="loader-letter">d</span>
+                <span class="loader-letter">e</span>
+                <span class="loader-letter">e</span>
+                <span class="loader-letter">b</span>
+            </div>
+            <div class="loader-bar" aria-hidden="true"></div>
+        </div>
+    </div>
+    <header class="site-header reveal-element" id="home">
+        <div class="logo"><a href="index.html" class="logo-link">Adham Eldeeb</a></div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="main-nav">
+            <a href="#selectedWork" class="nav-link">Projects <span class="badge">6</span></a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#contact" class="nav-link cta nav-cta-added">Let's talk ↗</a>
+        </nav>
+    </header>
+
+    <div class="hero-image-container reveal-element">
+        <img src="download.png" alt="Web Developer" class="hero-image" id="heroImage">
+    </div>
+
+    <main class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title reveal-element" id="heroTitle">
+                <span class="line line-1">WEB</span>
+                <span class="line line-2">DEVEL</span>
+                <span class="line line-3">OPER</span>
+                <span class="line line-4"></span>
+            </h1>
+
+            <div class="hero-description-container reveal-element">
+                <div class="hero-description">
+                    <div class="arrow-icon">↘</div>
+                    <p id="heroDescription">
+                        A freelance web developer based in the Egypt.
+                        Specializing in modern frontend technologies and creative coding,
+                        I build immersive and performant web experiences.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-indicators" id="carouselIndicators">
+            <span class="indicator active" data-index="0"></span>
+            <span class="indicator" data-index="1"></span>
+            <span class="indicator" data-index="2"></span>
+        </div>
+    </main>
+
+    <!-- Selected Work Section -->
+    <section class="selected-work" id="selectedWork">
+        <div class="section-header reveal-on-scroll" id="selectedWorkHeader">
+            <h2>Selected Work</h2>
+            <span class="work-count">(05)</span>
+        </div>
+        <div class="project-list">
+            <div class="project-item reveal-on-scroll" data-image="image.png">
+                <span class="project-number">01</span>
+                <h3 class="project-title">E-Commerce Platform</h3>
+                <span class="project-category">Development</span>
+            </div>
+            <div class="project-item reveal-on-scroll" data-image="image.png">
+                <span class="project-number">02</span>
+                <h3 class="project-title">Finance Dashboard</h3>
+                <span class="project-category">Development</span>
+            </div>
+            <div class="project-item reveal-on-scroll" data-image="image.png">
+                <span class="project-number">03</span>
+                <h3 class="project-title">Portfolio 2024</h3>
+                <span class="project-category">Development</span>
+            </div>
+            <div class="project-item reveal-on-scroll" data-image="image.png">
+                <span class="project-number">04</span>
+                <h3 class="project-title">Mobile Banking App</h3>
+                <span class="project-category">Product Development</span>
+            </div>
+            <div class="project-item reveal-on-scroll" data-image="image.png">
+                <span class="project-number">05</span>
+                <h3 class="project-title">Art Gallery</h3>
+                <span class="project-category">Web Experience</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="section-header reveal-on-scroll" id="aboutHeader">
+            <h2>About</h2>
+            <span class="work-count">(ME)</span>
+        </div>
+        <div class="about-content reveal-on-scroll">
+            <div class="about-text">
+                <p class="lead-text">
+                    I'm a multidisciplinary developer and designer with a passion for creating unique digital
+                    experiences.
+                </p>
+                <p>
+                    With a background in both design and engineering, I bridge the gap between aesthetics and
+                    functionality.
+                    I believe that the web is a canvas for creativity, and I strive to push the boundaries of what's
+                    possible
+                    in the browser. My work is driven by a desire to craft intuitive, accessible, and memorable
+                    interfaces.
+                </p>
+                <div class="skills-list">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React / Next.js</span>
+                    <span>Node.js</span>
+                    <span>Web Development</span>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="3.jpg" alt="Portrait" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="section-header reveal-on-scroll" id="contactHeader">
+            <h2>Get in touch</h2>
+            <span class="work-count">(@)</span>
+        </div>
+        <div class="contact-left">
+            <div class="contact-content reveal-on-scroll">
+                <p class="contact-lead">
+                    Have a project in mind? Let's build something great together.
+                </p>
+                <a href="mailto:adhameldeeb2015@hotmail.com" class="email-link">adhameldeeb2015@hotmail.com</a>
+                <div class="social-links-large">
+                    <a href="#" class="social-link">Instagram ↗</a>
+                    <a href="#" class="social-link">Github ↗</a>
+                    <a href="#" class="social-link">LinkedIn ↗</a>
+                </div>
+            </div>
+        </div>
+        <div class="contact-right">
+            <!-- fill the form -->
+            <div class="form-container">
+                <div class="form-content">
+                    <h2>Let's talk</h2>
+                    <form action="">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="section-header reveal-on-scroll" id="pricingHeader">
+            <h2>Pricing</h2>
+            <span class="work-count">($)</span>
+        </div>
+        <div class="pricing-grid reveal-on-scroll">
+            <div class="pricing-card">
+                <div class="card-header">
+                    <h3>Basic</h3>
+                    <p class="price">$999</p>
+                    <p class="description">Perfect for personal portfolios and small landing pages.</p>
+                </div>
+                <ul class="features-list">
+                    <li>One Page Design</li>
+                    <li>Mobile Responsive</li>
+                    <li>Basic SEO</li>
+                    <li>Contact Form</li>
+                    <li>1 Week Support</li>
+                </ul>
+                <a href="#contact" class="btn-pricing">Get Started</a>
+            </div>
+            <div class="pricing-card featured">
+                <div class="card-header">
+                    <h3>Standard</h3>
+                    <p class="price">$2,499</p>
+                    <p class="description">Ideal for small businesses and startups.</p>
+                </div>
+                <ul class="features-list">
+                    <li>Up to 5 Pages</li>
+                    <li>CMS Integration</li>
+                    <li>Advanced SEO</li>
+                    <li>Analytics Setup</li>
+                    <li>1 Month Support</li>
+                </ul>
+                <a href="#contact" class="btn-pricing">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <div class="card-header">
+                    <h3>Premium</h3>
+                    <p class="price">$4,999+</p>
+                    <p class="description">For complex web applications and e-commerce.</p>
+                </div>
+                <ul class="features-list">
+                    <li>Custom Web App</li>
+                    <li>E-commerce Functionality</li>
+                    <li>User Authentication</li>
+                    <li>Database Integration</li>
+                    <li>3 Months Support</li>
+                </ul>
+                <a href="#contact" class="btn-pricing">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estimate Calculator Section -->
+    <section class="estimate-section" id="estimate">
+        <div class="section-header reveal-on-scroll" id="estimateHeader">
+            <h2>Estimate</h2>
+            <span class="work-count">(CALC)</span>
+        </div>
+        <div class="estimate-container reveal-on-scroll">
+            <div class="estimate-form">
+                <h3>Calculate Your Project</h3>
+                <form id="estimateForm">
+                    <div class="form-group">
+                        <label for="projectType">Project Type</label>
+                        <select id="projectType" title="Select project type">
+                            <option value="1000">Landing Page ($1,000)</option>
+                            <option value="2500">Corporate Website ($2,500)</option>
+                            <option value="5000">E-commerce ($5,000)</option>
+                            <option value="8000">Web Application ($8,000)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="pageCount">Number of Pages</label>
+                        <input type="range" id="pageCount" min="1" max="20" value="1" title="Select number of pages">
+                        <span id="pageValue">1 Page</span> (+$100/page)
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label>
+                            <input type="checkbox" value="500" class="addon">
+                            CMS Integration (+$500)
+                        </label>
+                        <label>
+                            <input type="checkbox" value="300" class="addon">
+                            SEO Optimization (+$300)
+                        </label>
+                        <label>
+                            <input type="checkbox" value="200" class="addon">
+                            Dark Mode (+$200)
+                        </label>
+                    </div>
+                    <div class="total-estimate">
+                        <span>Estimated Cost:</span>
+                        <span id="totalCost">$1,100</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Policy & Payment Section -->
+    <section class="policy-section" id="policy">
+        <div class="section-header reveal-on-scroll" id="policyHeader">
+            <h2>Policy</h2>
+            <span class="work-count">(RULES)</span>
+        </div>
+        <div class="policy-content reveal-on-scroll">
+            <div class="policy-column">
+                <h3>Invoices</h3>
+                <p>Invoices are issued upon project milestones. A 50% deposit is required to commence work, with the
+                    remaining 50% due upon project completion and approval.</p>
+            </div>
+            <div class="policy-column">
+                <h3>Payment Methods</h3>
+                <p>We accept bank transfers, credit cards (via Stripe), and PayPal. All payments must be made within 14
+                    days of the invoice date.</p>
+            </div>
+            <div class="policy-column">
+                <h3>Revisions</h3>
+                <p>Two rounds of revisions are included in each package. Additional revisions will be charged at an
+                    hourly rate of $100/hr.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-slogan">
+                <h2>Design with class.<br>Built to Last.</h2>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <a href="#">Design</a>
+                    <a href="#">Development</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow</h3>
+                    <div><i class="fab fa-instagram"></i><a href="#">Instagram</a></div>
+                    <div><i class="fab fa-github"></i><a href="#">Github</a></div>
+                    <div><i class="fab fa-linkedin"></i><a href="#">LinkedIn</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-actions">
+                <a href="#home" id="backToTop">Back to top</a>
+                <a href="#contact" class="footer-cta">Let's talk ↗</a>
+            </div>
+            <div class="footer-legal">
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-meta">
+                <p>&copy; 2025 Adham Eldeeb. All rights reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-content">
+            <div class="modal-details">
+                <h2 class="modal-title" id="modalTitle">Project Title</h2>
+                <div class="modal-image-container">
+                    <img src="" alt="" class="modal-image" id="modalImage1">
+                </div>
+
+                <span class="modal-category" id="modalCategory">Category</span>
+                <p class="modal-description" id="modalDescription">
+                    Project description goes here. This is a placeholder for the actual project details.
+                </p>
+                <div class="project-details-content">
+                    <div class="modal-sidebar">
+                        <div class="modal-block">
+                            <h3 class="modal-label" id="modalClient">Client</h3>
+                            <p class="modal-text" id="modalClientText">Fashion Brand Co.</p>
+                        </div>
+                        <div class="modal-block">
+                            <h3 class="modal-label" id="modalRole">Role</h3>
+                            <p class="modal-text" id="modalRoleText">Frontend Developer<br>UI Designer</p>
+                        </div>
+                        <div class="modal-block">
+                            <h3 class="modal-label" id="modalLink">Link</h3>
+                            <a href="#" class="btn-pricing btn-visit">Visit Site ↗</a>
+                        </div>
+                    </div>
+                    <div class="modal-main">
+                        <h3 class="modal-label" id="modalChallenge">The Challenge</h3>
+                        <p class="modal-text" id="modalChallengeText">
+                            The client needed a modern, high-performance e-commerce platform to showcase their new
+                            collection.
+                            The goal was to create a seamless shopping experience that reflects the brand's premium
+                            identity.
+                            We focused on speed, accessibility, and a fluid user interface.
+                        </p>
+                        <h3 class="modal-label" id="modalSolution">The Solution</h3>
+                        <p class="modal-text" id="modalSolutionText">
+                            We built a custom storefront using React and Next.js, integrated with a headless CMS for
+                            easy
+                            content management.
+                            The design features large imagery, smooth transitions, and a minimal layout to let the
+                            products
+                            shine.
+                        </p>
+                        <img src="darris.jpg" alt="Detail 1" class="modal-image2" id="modalImage2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="close-button" aria-label="Close modal">&times;</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
