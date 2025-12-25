@@ -343,7 +343,7 @@ body {
 /* Image Container */
 .hero-image-container {
     position: absolute;
-    top: 53%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -1418,12 +1418,22 @@ body {
 }
 
 /* Footer */
+.footer-background-wrapper {
+    background-color: var(--color-white);
+    width: 100%;
+    padding: 10px 0 30px;
+}
+
 .site-footer {
+    margin: 0 10px;
     background-color: var(--color-black);
     color: var(--color-white);
-    padding: 6rem 3rem 2rem;
+    padding: 6rem 3rem 4rem;
     position: relative;
     z-index: 2;
+    border-radius: 40px;
+    width: calc(100% - 20px);
+    overflow: hidden;
 }
 
 .footer-content {
